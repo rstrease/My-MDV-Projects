@@ -3,8 +3,6 @@ var fishLimits = [5, 6];
 var time = "6:00 AM";
 var rod = "Spinning Reel";
 var lure = "Rooster Tail";
-var bite = true;
-var weight = 2;
 
 var output = function (message) {
 	 console.log(message);
