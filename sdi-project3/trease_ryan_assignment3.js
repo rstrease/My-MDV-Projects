@@ -30,6 +30,27 @@ var wakeUpKids = function (getUp) {
 }
 console.log(wakeUpKids(getUp));
 
+if (getUp = awake) {
+	var gear = {
+		"kids": [
+		{
+			name: kids[0],
+			pole: "Barbie",
+			tackle: ["bobber", " lead weight", " and hook"]
+		},
+		{
+			name: kids[1],
+			pole: "Lightning McQueen",
+			tackle: ["bobber", " lead weight", " and hook"]
+		}
+		]
+};
+for (var key in gear.kids) {
+var kid = gear.kids[key];
+console.log(kid.name + " is bringing a " + kid.pole + " pole" + " and the following tackle: " + kid.tackle + ".");
+};
+}
+
 var buyMinnows = function (message) {
 	if (haveMinnows && storeOpen) {
 		console.log("Thankfully the bait shop is open and they have minnows for the fishing trip. We buy " + minnows + " minnows for the kids to use and head to the farm pond.");
