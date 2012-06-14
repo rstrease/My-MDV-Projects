@@ -47,7 +47,7 @@ if (getUp = awake) {
 };
 for (var key in gear.kids) {
 var kid = gear.kids[key];
-console.log(kid.name + " is bringing a " + kid.pole + " pole" + " and the following tackle: " + kid.tackle + ".");
+console.log(kid.name + " is bringing a " + kid.pole + " pole and the following tackle: " + kid.tackle + ".");
 };
 }
 
@@ -63,3 +63,14 @@ var buyMinnows = function (message) {
 	}
 }
 buyMinnows(message);
+
+if (haveMinnows && storeOpen){
+console.log("Once we get to the farm pond we see others waiting to fish with us.");
+var handleData = function (json) {
+	for (var i = 0; i < json.others.length; i++){
+		var fishermen = json.others[i];
+		console.log(fishermen.name + " is here and brought a " + fishermen.pole + " pole and the following tackle: " + fishermen.tackle + ".");
+	};
+};
+handleData(json);
+}
