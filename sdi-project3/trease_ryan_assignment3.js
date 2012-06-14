@@ -5,15 +5,34 @@
 
 //alert("JavaScript works!");
 
-var haveMinnows = false;
+var haveMinnows = true;
 var storeOpen = true;
 var message;
 var minnows = 36;
+var getUp;
+var kids = ["Avery", "Bond"];
+var awake;
+var sleepy;
+
+var wakeUpKids = function (getUp) {
+	console.log("Time to wake " + kids[0] + " and " + kids [1] + " to go fishing!");
+	var upAndAtEm; 
+	if (upAndAtEm = true) {
+		var getUp = "They are up! Let's grab our gear and have some fun!";
+		awake = getUp;
+		return awake;
+	}
+	else {
+		var getUp = "Since you all don't want to get up we will stay home!";
+		sleepy = getUp;
+		return sleepy;
+	}
+}
+console.log(wakeUpKids(getUp));
 
 var buyMinnows = function (message) {
-	if (haveMinnows && storeOpen) {var message = "Thankfully the bait shop is open and they have minnows for the fishing trip. We buy " + minnows + " minnows for the kids to use and head to the .",
-	theyHaveMinnows = message;
-	return theyHaveMinnows;
+	if (haveMinnows && storeOpen) {
+		console.log("Thankfully the bait shop is open and they have minnows for the fishing trip. We buy " + minnows + " minnows for the kids to use and head to the farm pond.");
 	}
 	else if (haveMinnows === false && storeOpen === true) {
 		console.log("The bait shop is open but they are unfortunately out of minnows. The fishing trip is over before it starts.");
@@ -22,5 +41,4 @@ var buyMinnows = function (message) {
 		console.log("The bait shop is closed. The fishing trip is over before it starts.");
 	}
 }
-var GoFishing = buyMinnows(message);
-console.log(GoFishing);
+buyMinnows(message);
