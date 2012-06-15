@@ -5,7 +5,7 @@
 
 //alert("JavaScript works!");
 
-var haveMinnows = true;
+var haveMinnows = false;
 var storeOpen = true;
 var message;
 var minnows = 36;
@@ -64,6 +64,7 @@ var buyMinnows = function (message) {
 }
 buyMinnows(message);
 
+//JSON data
 if (haveMinnows && storeOpen){
 console.log("Once we get to the farm pond we see others waiting to fish with us.");
 var handleData = function (json) {
@@ -73,4 +74,14 @@ var handleData = function (json) {
 	};
 };
 handleData(json);
-}
+
+
+var minnowCount = function (number) {
+	console.log("We have a total of " + minnows + " minnows to split between 6 people.");
+	while (number > 0) {
+		console.log("We bait all of our hooks and have " + number + " minnows left.");
+		number -= 6; }
+		return; };
+		minnowCount(30);
+		console.log("We are out of minnows. It is time to call it quits and go home.");
+}		
