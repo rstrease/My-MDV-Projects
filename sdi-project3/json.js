@@ -3,7 +3,7 @@ var json = {
 		{
 			"name": "Brett",
 			"pole": "Zebco 33",
-			"tackle": "rooster tail"
+			"tackle": ["bobber", " lead weight", " and hook"]
 		},
 		{
 			"name": "Taylor",
@@ -13,7 +13,12 @@ var json = {
 		{
 			"name": "Shane",
 			"pole": "Spinning Reel",
-			"tackle": "spinner bait"
+			"tackle": ["bobber", " lead weight", " and hook"]
+		},
+		{
+			"name": "Ryan",
+			"pole": "Spinning Reel",
+			"tackle": ["bobber", " lead weight", " and hook"]
 		}
 	]
 };
