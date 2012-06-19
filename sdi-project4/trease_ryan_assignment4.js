@@ -31,7 +31,7 @@ var smallestValue = function (array, num) {
 var newArray = [10, 36, 48, -5, 7, 40];
 var num = 39;
 
-console.log(smallestValue(newArray, num));
+console.log("The smallest value in the array that is greater than " + num + " is " + smallestValue(newArray, num) + ".");
 
 
 //Find the total value of just the numbers in an array, even if some of the items are not numbers.
@@ -47,6 +47,6 @@ var totalValue = function (array) {
 };
 
 var a = new Array();
-a = [5,"a", 8, 10, "hello", 20];
+a = [5, "a", 8, 10, "hello", 20];
 
-console.log(totalValue(a));
+console.log("The total value of the numbers in the array is " + totalValue(a) + ".");
