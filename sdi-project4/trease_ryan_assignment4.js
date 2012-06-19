@@ -1,5 +1,21 @@
 //alert("JavaScript works!");
 
+//Does a string follow a 123-456-7890 pattern like a phone number?
+
+var validPhone = function (string){
+	var phoneNumber = /\(?\d{3}\)?([-\/\.])\d{3}\1\d{4}/;
+		if(string.match(phoneNumber)){
+			return "Phone number is valid.";
+		}
+		else{
+			return "Phone number is not valid.";
+		}
+	};
+		
+var num = "405-582-5423";
+console.log(validPhone(num));
+
+
 //Find the smallest value in an array that is greater than a given number
 
 var smallestValue = function (array, num) {
