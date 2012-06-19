@@ -5,7 +5,7 @@
 
 //alert("JavaScript works!");
 
-var haveMinnows = false;
+var haveMinnows = true;
 var storeOpen = true;
 var message;
 var minnows = 36;
@@ -83,5 +83,14 @@ var minnowCount = function (number) {
 		number -= 6; }
 		return; };
 		minnowCount(30);
-		console.log("We are out of minnows. It is time to call it quits and go home.");
+		console.log("We are out of minnows but we have had a great day.");
+		
+var fishCount = function (fish) {
+	console.log("In summary, we had a total of " + minnows + " minnows to split between 6 people.");
+	while (fish < 42) {
+		console.log("With each minnow each of us surprisingly caught a fish. After taking the fish off our hooks we had a total of " + fish + " fish.");
+		fish += 6; }
+		return; };
+		fishCount(6);
+		console.log("After a long but productive day of fishing it is time to call it quits and go home.");
 }		
