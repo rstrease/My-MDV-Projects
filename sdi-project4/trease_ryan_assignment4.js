@@ -3,15 +3,15 @@
 //Does a string follow a 123-456-7890 pattern like a phone number?
 
 var validPhone = function (string){
-	var phoneNumber = /\(?\d{3}\)?([-\/\.])\d{3}\1\d{4}/;
-		if(string.match(phoneNumber)){
-			return "Phone number is valid.";
-		}
-		else{
-			return "Phone number is not valid.";
-		}
-	};
-		
+	var phoneNumber = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+	if(string.match(phoneNumber)){
+		return "The phone number " + num + " is valid.";
+	}
+	else{
+		return "The phone number " + num + " is not valid.";
+	}
+}
+	
 var num = "405-582-5423";
 console.log(validPhone(num));
 
@@ -41,8 +41,8 @@ var totalValue = function (array) {
 	for (i = 0; i < array.length; i++) {
 		if (!isNaN(array[i])) {
 			sum += array[i];			
-		};
-	};
+		}
+	}
 	return sum;
 };
 
