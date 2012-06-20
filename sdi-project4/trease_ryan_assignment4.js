@@ -16,6 +16,22 @@ var num = "405-582-5423";
 console.log(validPhone(num));
 
 
+//Does a string follow an aaa@bbb.ccc pattern like an email address?
+
+var validEmail = function (string) {
+	var email = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+	if (string.match(email)) {
+		return "The email address " + mail + " is valid.";
+	}
+	else {
+		return "The email address " + mail + " is not valid.";
+	}
+}
+
+var mail = "rstrease@gmail.com";
+console.log(validEmail(mail));
+
+
 //Find the smallest value in an array that is greater than a given number
 
 var smallestValue = function (array, num) {
