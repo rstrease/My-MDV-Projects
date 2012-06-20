@@ -32,6 +32,16 @@ var mail = "rstrease@gmail.com";
 console.log(validEmail(mail));
 
 
+//Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10
+
+var formatNum = function (number) {
+	var n = number.toFixed(2); 
+	return n;
+}
+
+console.log(formatNum(5.7));
+
+
 //Find the smallest value in an array that is greater than a given number
 
 var smallestValue = function (array, num) {
