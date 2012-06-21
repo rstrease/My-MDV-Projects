@@ -3,7 +3,7 @@
 //Does a string follow a 123-456-7890 pattern like a phone number?
 
 var validPhone = function (string){
-	var phoneNumber = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+	var phoneNumber = /^\(?\d{3}\)?([-\/\.])\d{3}\1\d{4}/;
 	if(string.match(phoneNumber)){
 		return "The phone number " + num + " is valid.";
 	}
@@ -12,7 +12,7 @@ var validPhone = function (string){
 	}
 }
 	
-var num = "405-582-5423";
+var num = "405582-5423";
 console.log(validPhone(num));
 
 
@@ -32,14 +32,30 @@ var mail = "rstrease@gmail.com";
 console.log(validEmail(mail));
 
 
+//Is the string a URL? (Does it start with http: or https:?)
+
+	var urlString = function (url) {
+		var validUrl = /^(?:http(s)?:\/\/)?(?:\www+\.)+[a-z]{2,6}$/i;
+		if (url.match(validUrl)) {
+			return "The URL " + url + " is valid.";
+		}
+		else {
+			return "The URL " + url + " is not valid.";
+		}
+	}
+	
+console.log(urlString("http://ww.google.com"))
+
+
 //Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10
 
 var formatNum = function (number) {
 	var n = number.toFixed(2); 
 	return n;
 }
+
 var num = 5.7;
-console.log("The number " + num + " formated to two decimal places is " + formatNum(num) + ".");
+console.log("The number " + num + " formatted to two decimal places is $" + formatNum(num) + ".");
 
 
 //Find the smallest value in an array that is greater than a given number
