@@ -38,8 +38,8 @@ var formatNum = function (number) {
 	var n = number.toFixed(2); 
 	return n;
 }
-
-console.log(formatNum(5.7));
+var num = 5.7;
+console.log("The number " + num + " formated to two decimal places is " + formatNum(num) + ".");
 
 
 //Find the smallest value in an array that is greater than a given number
