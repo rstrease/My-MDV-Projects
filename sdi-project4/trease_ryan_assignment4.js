@@ -58,6 +58,17 @@ var num = 5.7;
 console.log("The number " + num + " formatted to two decimal places is $" + formatNum(num) + ".");
 
 
+//Given a string version of a number such as "42", return the value as an actual Number, such as 42.
+
+	var stringVersion = function (num){
+		var n = parseInt(num);
+		return n;
+	}
+	
+var number = "42";
+console.log("The string \"" + number + "\" returned as an actual number is " + stringVersion(number) + ".");
+
+
 //Find the smallest value in an array that is greater than a given number
 
 var smallestValue = function (array, num) {
